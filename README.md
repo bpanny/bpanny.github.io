@@ -4,7 +4,7 @@ You can find my scientific publications on my [Google Scholar Page](https://scho
 
 ### Coursework
 
-You can see a portfolio of coursework I've completed in my Coursework Repository on Github
+You can see all my Master's in Biostatistics coursework in my [Coursework Repository](https://github.com/bpanny/Coursework)
 
 ### Network Modelling
 
