@@ -12,4 +12,4 @@ I have Github repositories for a [network visualization dashboard](https://githu
 
 ### Simulations
 
-[My simulations repository](https://github.com/bpanny/simulations) contains code and markdown files where I rehearse my learnings in any variety of fields
+[My simulations repository](https://github.com/bpanny/simulations) contains code and markdown files where I rehearse my learnings in any variety of fields. Forever under construction.
