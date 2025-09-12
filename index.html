@@ -76,11 +76,22 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav a {
             margin: 0 1rem;
             font-weight: 500;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
         }
 
         @media (max-width: 600px) {
@@ -109,14 +120,16 @@
         <a href="#about-me">About Me</a>
         <a href="#scientific-research">Research</a>
         <a href="#bookshelf">Bookshelf</a>
+        <a href="#links">Links</a>
     </nav>
 
     <main>
         <section id="about-me">
             <h2>About Me</h2>
             <p>Welcome to my homepage! My name is Ben and I'm currently a PhD student in the Intelligent Systems Program at the University of Pittsburgh School of Computing and Information. I previously completed my Master's in Biostatistics from the University of Pittsburgh School of Public Health, where I wrote my thesis on symptom dynamics in cancer patients undergoing chemotherapy treatment.</p>
-            <p>You can access a recent resume of mine <a href="doc/BenjaminPanny_DSI.pdf">here</a></p>
+            <p>You can access a recent resume of mine <a href="doc/BenjaminPanny_DSI.pdf">here</a>.</p>
         </section>
+        
         <section id="scientific-research">
             <h2>Scientific Research</h2>
             <p>My research aim is to leverage computational, statistical, and mathematical techniques to improve public health. My current research projects ask the following questions:</p>
@@ -130,13 +143,22 @@
                 <li>How can we optimize dynamic social network algorithms to run efficiently on high-performance computing hardware?</li>
             </ul>
             
-            <p>You can find a full list of my scientific publications on my <a href="https://scholar.google.com/citations?hl=en&user=zpDgH3AAAAAJ&view_op=list_works">Google Scholar Page</a></p>
+            <p>You can find a full list of my scientific publications on my <a href="https://scholar.google.com/citations?hl=en&user=zpDgH3AAAAAJ&view_op=list_works">Google Scholar Page</a>.</p>
         </section>
+        
         <section id="bookshelf">
             <h2>Bookshelf</h2>
             <p><a href="https://teachyourselfcs.com/">teachyourselfcs.com</a> offers excellent and (mostly) free resources for learning computer science. Topics they recommend resources for are Programming, Computer Architecture, Algorithms and Data Structures, Math for Computer Science, Operating Systems, Computer Networking, Databases, Languages and Compilers, and Distributed Systems.</p>
             <p>The Road to Reality by Roger Penrose. This book is a comprehensive introduction to modern physics and the mathematical tools used.</p>
             <p>Will update later with more, probably.</p>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <p>A collection of useful resources and pages I've created or found interesting.</p>
+            <ul>
+                <li><a href="music/chromatic_intervals.html">A Musician's Guide to Chromatic Intervals</a></li>
+                </ul>
         </section>
     </main>
 </body>
