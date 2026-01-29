@@ -38,6 +38,16 @@
             opacity: 0.9;
             margin-top: 0.5rem;
         }
+        
+        .contact-info {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info a {
+            color: #ecf0f1;
+            text-decoration: underline;
+        }
 
         main {
             max-width: 800px;
@@ -58,6 +68,13 @@
             border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 0.5rem;
             margin-top: 0;
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
         a {
@@ -93,6 +110,14 @@
         li {
             margin-bottom: 0.5rem;
         }
+        
+        .publication {
+            margin-bottom: 1rem;
+        }
+        
+        .publication-title {
+            font-weight: bold;
+        }
 
         @media (max-width: 600px) {
             header {
@@ -113,7 +138,10 @@
 <body>
     <header>
         <h1>Benjamin Panny</h1>
-        <div class="subtitle">Student of Intelligent Systems</div>
+        <div class="subtitle">Ph.D. Student in Intelligent Systems</div>
+        <div class="contact-info">
+            University of Pittsburgh | <a href="mailto:bmp83@pitt.edu">bmp83@pitt.edu</a>
+        </div>
     </header>
 
     <nav class="nav">
@@ -127,54 +155,73 @@
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-            <p>Welcome to my homepage! My name is Ben and I'm currently a PhD student in the Intelligent Systems Program at the University of Pittsburgh School of Computing and Information. I previously completed my Master's in Biostatistics from the University of Pittsburgh School of Public Health, where I wrote my thesis on symptom dynamics in cancer patients undergoing chemotherapy treatment.</p>
-            <p>You can access a recent resume of mine <a href="doc/BenjaminPanny_DSI.pdf">here</a>.</p>
+            <p>Welcome to my homepage! My name is Ben and I am a Ph.D. student in the Intelligent Systems Program at the University of Pittsburgh School of Computing and Information, advised by <a href="https://aminrahimian.github.io">Dr. Amin Rahimian</a>. I am a Graduate Student Researcher in the <a href="#">Sociotechnical Systems Lab</a>.</p>
+            
+            <p>I hold an M.S. in Biostatistics (Health Data Science) from the University of Pittsburgh School of Public Health and a B.S. in Neuroscience/Psychology from the University of Rochester. My background bridges the gap between biological systems, statistics, and computational intelligence.</p>
+            
+            <p>Most recently, I have worked as a Multi-Agent Systems Research Intern at the <strong>Honda Research Institute</strong> and as a Research Intern with the <strong>AI-READI Consortium</strong> (NIH). You can access my resume <a href="doc/afrl_summer_resume.pdf">here</a>.</p>
         </section>
         
         <section id="scientific-research">
             <h2>Scientific Research</h2>
-            <p>My research aim is to leverage computational, statistical, and mathematical techniques to improve public health. My current research projects ask the following questions:</p>
+            <p>My research uses computational, statistical, and topological techniques to model complex systems, from public health dynamics to the geometry of latent spaces in AI. Here's a glimpse of some of my work:</p>
 
             <ul>
-                <li>Why are vaccination rates either below or falling toward the threshold needed for herd immunity?</li>
-                <li>What makes vaccine related content go viral?</li>
-                <li>How does pro- and anti-vaccine information change people's vaccine beliefs and behaviors? What is the cost of these changes in terms of limited vaccine uptake and subsequent infectious disease transmission?</li>
-                <li>What is the cost-effectiveness of software-based interventions for psychiatric disorders compared to pharmaceutical interventions or the combination of the two?</li>
-                <li>How can we automate the time-intensive process of building models for decision-making in healthcare?</li>
-                <li>How can we optimize dynamic social network algorithms to run efficiently on high-performance computing hardware?</li>
+                <li><strong>Topological Perspectives on AI Efficiency:</strong> Moving beyond linear interventions in Large Language Models (LLMs) by exploring the differential topology of activation manifolds. Can we "steer" models more efficiently by respecting the geometry of their latent space?</li>
+                <li><strong>Mechanistic Interpretability for Biomarker Discovery:</strong> Adapting "hypothesis triage" frameworks to foundation models in healthcare. I am currently using Sparse Autoencoders (SAEs) to decompose the latent space of retinal imaging models, aiming to distill "black box" representations into clinically interpretable biomarkers for metabolic disease.</li>
+                <li><strong>Multi-Agent Systems (MAS):</strong> Investigating the "Specialist's Dilemma" and how rigid specialization creates system-level bottlenecks in ad-hoc collaboration.</li>
+                <li><strong>Epidemic Modeling:</strong> Developing national-scale stochastic reaction-diffusion models (e.g., SEIRV) of contagion and stopping rules + evaluation metrics for Monte Carlo simulations.</li>
+                <li><strong>Data Privacy & Ethics:</strong> Evaluating privacy-enhancing technologies (PETs) and the alignment of data access requests with licensing terms in large-scale medical datasets.</li>
             </ul>
+            <h3>Selected Recent Publications</h3>
+            <div class="publication">
+                <div class="publication-title">Too Many Specialists: Emergent Inefficiencies and Bottlenecks for Multi-Agent Ad-Hoc Collaboration</div>
+                <div>Panny B, Zahedi Z, Mehrotra S, Akash K. <em>Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>. [To appear]</div>
+            </div>
+            <div class="publication">
+                <div class="publication-title">Privacy at Scale in Networked Healthcare</div>
+                <div>Rahimian MA, Panny B, & Joshi JBD. <em>7th IEEE International Conference on Trust, Privacy and Security in Intelligent Systems (TPS 2026)</em>.</div>
+            </div>
             
-            <p>You can find a full list of my scientific publications on my <a href="https://scholar.google.com/citations?hl=en&user=zpDgH3AAAAAJ&view_op=list_works">Google Scholar Page</a>.</p>
+            <p style="margin-top: 1.5rem;">You can find a full list of my scientific publications on my <a href="https://scholar.google.com/citations?hl=en&user=zpDgH3AAAAAJ&view_op=list_works">Google Scholar Page</a>.</p>
         </section>
         
         <section id="virtual-exploratorium">
             <h2>Virtual Exploratorium</h2>
+            <p>I use visualizations to build intuition for interesting mathematical concepts. Translating abstract concepts into dynamic geometry makes their meaning far more tangible.</p>
             <p>
-                This animation visualizes the relationship between the Wasserstein-1 distance and Kullback-Leibler (KL) Divergence for two normal distributions, P: N(0, 1) and Q: N(μq, 1), as the mean of Q (μq) changes. You can see how the metrics respond differently to the separation between the distributions.
+                <strong>Wasserstein vs. KL Divergence:</strong> This animation visualizes the relationship between the Wasserstein-1 distance and Kullback-Leibler (KL) Divergence for two normal distributions as their means diverge. It highlights why Wasserstein is often a more robust metric for distributions with non-overlapping support—a key concept in my work on simulation stopping rules.
             </p>
-            <img src="img/faceted_normal_KL_WD_anim.gif" alt="Animation of Wasserstein vs. KL Divergence" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
+            <img src="img/faceted_normal_KL_WD_anim.gif" alt="Animation of Wasserstein vs. KL Divergence" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px; margin-bottom: 2rem;">
+            
             <p>
-                In a linear regression model, correlated inputs inflate their beta coefficients, inflating the modeler's perceived impact of the inputs on their outcome.
+                <strong>Variance Inflation in Linear Models:</strong> In a linear regression model, correlated inputs (multicollinearity) inflate beta coefficient variance, distorting the perceived impact of inputs on the outcome.
             </p>
             <img src="img/beta_covariance.gif" alt="Animation of Variance Inflation" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
-            <!-- <p style="text-align:center; margin-top:1rem;"> -->
-                <!-- You can find the code for this and other projects in my <a href="https://github.com/bpanny/simulations">Simulations Repository</a>.
-            </p> -->
+            <p>
+                <strong>Gyroid:</strong> This is a gyroid, a triply periodic minimal surface (TPMS) that divides space into two congruent, interpenetrating labyrinths. The animation visualizes the surface defined by the trigonometric approximation $\sin(x)\cos(y) + \sin(y)\cos(z) + \sin(z)\cos(x) = t$.
+                <br><br>
+                The "morphing" effect demonstrates the topology's evolution as the <strong>level set parameter ($t$)</strong> cycles between approximately -1.4 and 1.4. At $t=0$, the channels have equal volume; as the value shifts toward the extremes, one labyrinth expands while the other contracts, illustrating the surface's continuous deformation before the channels pinch off.
+            </p>
+            <img src="img/gyroid_morph_spin.gif" alt="Animation of Variance Inflation" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
         </section>
         
         <section id="bookshelf">
-            <h2>Bookshelf</h2>
-            <p><a href="https://teachyourselfcs.com/">teachyourselfcs.com</a> offers excellent and (mostly) free resources for learning computer science. Topics they recommend resources for are Programming, Computer Architecture, Algorithms and Data Structures, Math for Computer Science, Operating Systems, Computer Networking, Databases, Languages and Compilers, and Distributed Systems.</p>
-            <p>The Road to Reality by Roger Penrose. This book is a comprehensive introduction to modern physics and the mathematical tools used.</p>
-            <p>Will update later with more, probably.</p>
+            <h2>Bookshelf & Resources</h2>
+            <p>A collection of resources that have influenced my thinking:</p>
+            <ul>
+                <li><a href="https://teachyourselfcs.com/">teachyourselfcs.com</a> – Essential roadmap for CS fundamentals.</li>
+                <li><em>The Road to Reality</em> by Roger Penrose – A comprehensive guide to the physical universe and its mathematical underpinnings.</li>
+                <li><em>Benchmarks as Microscopes: A Call for Model Metrology</em> – On the importance of rigorous measurement in AI evaluation.</li>
+                <li>Recent readings on <strong>Persistent Homology</strong> and the <strong>Geometry of Embeddings</strong> (e.g., the "Shared Global and Local Geometry" papers from CoLM).</li>
+            </ul>
         </section>
 
         <section id="links">
             <h2>Links</h2>
-            <p>A collection of useful resources and pages I've created or found interesting for which I make zero quality guarantees.</p>
             <ul>
-                <li><a href="music/chromatic_intervals.html">A Musician's Guide to Chromatic Intervals</a></li>
-                </ul>
+                <li><a href="music/chromatic_intervals.html">A Musician's Guide to Chromatic Intervals</a> – A resource born from my interest in music theory and composition.</li>
+            </ul>
         </section>
     </main>
 </body>
